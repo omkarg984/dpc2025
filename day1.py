@@ -8,7 +8,9 @@ def sort012(arr):
             mid += 1
         elif arr[mid] == 1:
             mid += 1
-        else: 
+        else:  # arr[mid] == 2
             arr[mid], arr[high] = arr[high], arr[mid]
             high -= 1
     return arr
+arr = [0, 1, 2, 1, 0, 2, 1, 0]
+print(sort012(arr))
